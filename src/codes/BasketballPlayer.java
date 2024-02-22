@@ -95,7 +95,8 @@ public class BasketballPlayer
         if(playerLastName.length() >= 2)
         {
             sb.append(playerLastName.substring(0, 2).toUpperCase());
-        }else
+        }
+        else
         {
             sb.append(playerLastName.toUpperCase());
         }
