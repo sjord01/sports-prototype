@@ -4,36 +4,48 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BasketballSportsTest
+public class BasketballSportsTest
 {
-
-    @BeforeEach
-    void setUp()
-    {
-        fail();
-    }
-
-    @AfterEach
-    void tearDown()
-    {
-        fail();
-    }
 
     @Test
     void testThreePointShot()
     {
-        fail();
+        BasketballPlayer player = new BasketballPlayer("John", "Doe", 190.0, 20, 5);
+        BasketballTeam team = new BasketballTeam("Team A");
+
+        BasketballSports sports = new BasketballSports(player);
+
+        String ex = "John from Team A scored three points!";
+        String actual = sports.threePointShot(true, 7.0, team);
+
+        assertEquals(ex, actual);
     }
 
     @Test
     void testTravellingPenalty()
     {
-        fail();
+        BasketballPlayer player = new BasketballPlayer("John", "Doe", 190.0, 20, 5);
+        BasketballTeam team = new BasketballTeam("Team A");
+
+        BasketballSports sports = new BasketballSports(player);
+
+        String ex = "John from Team A committed a travelling penalty!";
+        String actual = sports.travellingPenalty(true, 4, team);
+
+        assertEquals(ex, actual);
     }
 
     @Test
     void testFiveSecondsCloselyGuardedPenalty()
     {
-        fail();
+        BasketballPlayer player = new BasketballPlayer("John", "Doe", 190.0, 20, 5);
+        BasketballTeam team = new BasketballTeam("Team A");
+
+        BasketballSports sports = new BasketballSports(player);
+
+        String ex = "John from Team A committed a five-second closely guarded penalty!";
+        String actual = sports.fiveSecondsCloselyGuardedPenalty(true, 5, team);
+
+        assertEquals(ex, actual);
     }
 }

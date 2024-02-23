@@ -4,7 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BasketballPlayerTest {
+class BasketballPlayerTest
+{
     BasketballPlayer b1;
     BasketballPlayer b2;
 
@@ -21,7 +22,8 @@ class BasketballPlayerTest {
     }
 
     @Test
-    void getExpectedExceptionsPlayerAge() {
+    void getExpectedExceptionsPlayerAge()
+    {
         IllegalArgumentException ex = assertThrows(IllegalArgumentException.class, () -> {
             b1 = new BasketballPlayer("JoHn", "DOe", 198.6, 46, 4);
         });

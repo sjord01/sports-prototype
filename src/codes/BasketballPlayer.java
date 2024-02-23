@@ -43,7 +43,7 @@ public class BasketballPlayer
 
     public String getPlayerLastName()
     {
-        return playerFirstName;
+        return playerLastName;
     }
 
     public double getPlayerHeightCm()
